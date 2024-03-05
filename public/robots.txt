@@ -1,0 +1,13 @@
+# Geral
+User-agent: *
+Disallow: /politica-de-privacidade/
+Disallow: /termos-de-uso/
+
+User-agent: GPTBot
+Disallow: /
+
+# Hostname 
+Host: https://diamondhabitacional.com.br/
+
+# Sitemaps
+Sitemap: https://diamondhabitacional.com.br/sitemap.xml
