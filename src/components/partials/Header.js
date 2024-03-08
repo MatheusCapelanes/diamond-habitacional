@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <header className="w-full mx-auto text-zinc-300">
       {/* Sub header */}
-      <div className="hidden md:flex flex-row items-center justify-between py-2 bg-[#995522] px-10">
+      {/* <div className="hidden md:flex flex-row items-center justify-between py-2 bg-[#995522] px-10">
         <div>
           <ul className="flex justify-center items-center space-x-5">
             <li className="hover:text-white">
@@ -64,7 +64,7 @@ export default function Header() {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
       {/* Master header */}
       <div className="flex items-center px-10 bg-black h-[64px] justify-between">
         {/* Logo da Diamond */}
@@ -125,16 +125,16 @@ export default function Header() {
                   </ul>
                 )}
               </li>
-              <li className={`${open ? "py-2" : "py-0"} hover:text-white`}>
+              {/* <li className={`${open ? "py-2" : "py-0"} hover:text-white`}>
                 <Link href="/noticias" className="no-underline text-white">
                   Notícias
                 </Link>
-              </li>
-              <li className={`${open ? "py-2" : "py-0"} hover:text-white`}>
+              </li> */}
+              {/* <li className={`${open ? "py-2" : "py-0"} hover:text-white`}>
                 <Link href="/cooperados" className="no-underline text-white">
                   Cooperados
                 </Link>
-              </li>
+              </li> */}
               <li className={`${open ? "py-2" : "py-0"} hover:text-white`}>
                 <Link href="/contato" className="no-underline text-white">
                   Contato

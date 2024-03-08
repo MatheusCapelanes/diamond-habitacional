@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-
 import Banner from "@/components/Banner";
 import Section from "@/components/Section";
 
