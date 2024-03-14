@@ -1,4 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+
+import { Roboto } from "next/font/google";
+import { Inter } from "next/font/google";
+
 module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -14,10 +18,17 @@ module.exports = {
       },
       colors:{
         black: "#02020b",
-        gold: "#FFDF00",
+        gold: "#E3B505",
         white: "#FFFFFF",
-        
-      }
+        blue: "#0075C4",
+        red: "#EA2B1F",
+        aquamarine: "#B5FFE9"
+      },
+      fontFamily: {
+        roboto: ['Roboto', "sans-serif"],
+        inter: ['Inter', "sans-serif"],
+      },
+      
     },
   },
   plugins: [
