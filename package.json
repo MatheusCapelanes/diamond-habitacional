@@ -16,6 +16,7 @@
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "10.4.14",
     "bootstrap": "^5.3.0",
+    "easy-react-text-loop": "^1.0.2",
     "eslint-config-next": "^13.5.4",
     "moment": "^2.29.4",
     "next": "^13.5.4",

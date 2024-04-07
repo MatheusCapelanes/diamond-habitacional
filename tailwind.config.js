@@ -17,12 +17,7 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors:{
-        black: "#02020b",
         gold: "#E3B505",
-        white: "#FFFFFF",
-        blue: "#0075C4",
-        red: "#EA2B1F",
-        aquamarine: "#B5FFE9"
       },
       fontFamily: {
         roboto: ['Roboto', "sans-serif"],

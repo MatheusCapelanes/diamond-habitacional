@@ -13,11 +13,17 @@ import DocumentacaoNecessaria from "@public/icons/documentacao-necessaria.svg";
 import ProcessoDeInscricao from "@public/icons/processo-de-inscricao.svg";
 import InscricaoRealizada from "@public/icons/inscricao-realizada.svg";
 import EnterpriseProject from "@/components/EnterpriseProject";
+import { TextLoop } from "easy-react-text-loop";
+
 
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
 const inter = Inter({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function Home() {
+
+
+  const areText = ['COOPERATIVA', 'Inovação', 'Facilidade', 'Qualidade', 'Oportunidade' ]
+
   return (
     <>
       <Head>
@@ -47,8 +53,9 @@ export default function Home() {
         >
           <div className="flex flex-col md:flex-row justify-between items-center w-full gap-4">
             <div>
-              <h1 className="text-white text-4xl lg:text-5xl font-bold mb-5">
-                Somos <span className="text-[#ffd862]">Inovação</span>
+              <h1 className="text-white text-4xl lg:text-5xl font-bold mb-5 flex flex-col md:flex-row gap-2">
+                <div className="mx-2">Somos</div>
+                <span className="text-gold"><TextLoop timeout={4000} children={areText} /></span>
               </h1>
               <p className="text-white">
                 Conheça agora o melhor Programa de Habitação que chegou na
@@ -90,13 +97,15 @@ export default function Home() {
           </div>
         </div>
         {/* Empreendimentos */}
-        <div className="w-4/5 m-auto">  
-          <h3 className="font-bold text-2xl text-center mt-10 font-roboto text-">Confira nossas oportunidades</h3>
+        <div className="w-4/5 m-auto">
+          <h3 className="font-bold text-2xl text-center mt-10 font-roboto text-">
+            Confira nossas oportunidades
+          </h3>
           <Section className={"w-4/5 m-auto flex flex-wrap justify-around"}>
             <EnterpriseProject
               image="images/residencial-topazio/new-images/frente.jpeg"
               title="Residencial Topázio"
-              stage="Em construção"
+              stage="Obras Iniciadas"
               bedrooms={2}
               garage
             />
@@ -108,7 +117,7 @@ export default function Home() {
               garage
             />
           </Section>
-          <Section className="flex flex-col justify-center items-center px-28">
+          <Section className="flex flex-col justify-center items-center px-28 ">
             <div>
               <h2 className="text-3xl font-bold text-[#995522] mb-4">
                 Como realizar a inscrição no programa habitacional?
@@ -155,9 +164,9 @@ export default function Home() {
                 <div>
                   <ul className="list-disc ml-4 text-sm space-y-2">
                     <li>
-                      Assinatura da Ficha de adesão, Folha de pagamentos, Declação
-                      de uso de imagem (se houver permissão) e questionário de
-                      confirmação de informações.
+                      Assinatura da Ficha de adesão, Folha de pagamentos,
+                      Declação de uso de imagem (se houver permissão) e
+                      questionário de confirmação de informações.
                     </li>
                     <li>
                       Assinatura do Termo de adesão (contrato) em duas vias de
