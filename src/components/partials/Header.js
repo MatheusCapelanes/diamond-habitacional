@@ -95,7 +95,7 @@ export default function Header() {
                   Cooperativa
                 </Link>
               </li>
-              <li
+              {/* <li
                 className={`${open ? "py-2" : "py-0"} hover:text-white`}
                 onClick={toggleSubmenuFromProjects}
               >
@@ -124,7 +124,7 @@ export default function Header() {
                     </li>
                   </ul>
                 )}
-              </li>
+              </li> */}
               {/* <li className={`${open ? "py-2" : "py-0"} hover:text-white`}>
                 <Link href="/noticias" className="no-underline text-white">
                   Notícias

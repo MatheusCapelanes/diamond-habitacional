@@ -1,19 +1,12 @@
 import React from "react";
-import { MdOutlineBed } from "react-icons/md";
+import { MdOutlineBed, MdLocationPin } from "react-icons/md";
 import { FaCarSide } from "react-icons/fa6";
+import { IDataBuilding } from "../../../mocks/dataBuilding";
 
-interface EnterpriseProjectProps {
-  title: string;
-  image: string;
-  stage: string;
-  bedrooms: number;
-  garage: boolean;
-}
-
-const EnterpriseProject = (props: EnterpriseProjectProps) => {
+const EnterpriseProject = (props: IDataBuilding) => {
   return (
-    <div className="my-10 w-fit text-white">
-      <h1 className="bg-gray-300 text-slate-900 opacity-50  rounded-t-lg font-semibold p-2 font-inter uppercase text-center">
+    <div className="my-10 w-fit text-white font-light">
+      <h1 className="bg-gray-300 text-slate-900 opacity-50 rounded-t-lg font-light p-2  uppercase text-center">
         {props.stage}
       </h1>
       <img
@@ -22,7 +15,11 @@ const EnterpriseProject = (props: EnterpriseProjectProps) => {
         alt="Foto ilustrativa da fachada do Topazio"
       />
       <div className="p-3 bg-zinc-400 rounded-b-lg">
-        <h2 className="font-semibold text-2xl py-2">{props.title}</h2>
+        <h2 className="text-2xl py-2">{props.title}</h2>
+        <div className="flex items-center gap-2 my-2">
+          <MdLocationPin size={25}/>
+          <p className="">{props.city}</p>
+        </div>
         {props.bedrooms && props.bedrooms > 0 ? (
           <div className="flex items-center gap-2">
             <MdOutlineBed size={25} />

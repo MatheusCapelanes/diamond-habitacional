@@ -1,28 +1,17 @@
 import Image from "next/image";
-import Link from "next/link";
 import Head from "next/head";
-
-/**
- * Fontes
- */
-import { Roboto } from "next/font/google";
-import { Inter } from "next/font/google";
-
 import Section from "@/components/Section";
 import DocumentacaoNecessaria from "@public/icons/documentacao-necessaria.svg";
 import ProcessoDeInscricao from "@public/icons/processo-de-inscricao.svg";
 import InscricaoRealizada from "@public/icons/inscricao-realizada.svg";
 import EnterpriseProject from "@/components/EnterpriseProject";
 import { TextLoop } from "easy-react-text-loop";
+import { dataBuilding } from "../../mocks/dataBuilding";
 
-
-const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
-const inter = Inter({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function Home() {
 
-
-  const areText = ['COOPERATIVA', 'Inovação', 'Facilidade', 'Qualidade', 'Oportunidade' ]
+  const areText = ['Cooperativa', 'Inovação', 'Facilidade', 'Qualidade', 'Oportunidade' ]
 
   return (
     <>
@@ -43,12 +32,13 @@ export default function Home() {
         <meta property="og:url" content="https://diamondhabitacional.com.br/" />
         <meta property="og:type" content="website" />
       </Head>
-      <main className={`flex flex-col ${roboto.className} space-y-5`}>
+      <main className={`flex flex-col space-y-5`}>
         <div
-          className={`flex flex-col items-start justify-center px-16 h-[600px] w-full ${inter.className}`}
+          className={`flex flex-col items-start justify-center px-16 h-[600px] w-full `}
           style={{
-            backgroundImage: `url("/banners/cooperativismo.jpg")`,
+            backgroundImage: `url("/images/principal/familyHome.jpg")`,
             backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
         >
           <div className="flex flex-col md:flex-row justify-between items-center w-full gap-4">
@@ -57,13 +47,13 @@ export default function Home() {
                 <div className="mx-2">Somos</div>
                 <span className="text-gold"><TextLoop timeout={4000} children={areText} /></span>
               </h1>
-              <p className="text-white">
+              <p className="text-white font-montserrat">
                 Conheça agora o melhor Programa de Habitação que chegou na
                 cidade de Caieiras e região!
               </p>
             </div>
             {/* Vídeo da Diamond */}
-            <div>
+            {/* <div>
               <video
                 className="rounded-xl p-[1px] bg-[#ffd862] w-80 md:w-[420px]"
                 width="420"
@@ -84,11 +74,11 @@ export default function Home() {
                   Seu navegador não suporta a reprodução de vídeos.
                 </p>
               </video>
-            </div>
+            </div> */}
           </div>
           <div className="flex justify-center w-full relative">
             <Image
-              className="hidden lg:block absolute -bottom-30 animate-bounce"
+              className="hidden lg:block mt-40 animate-bounce"
               src="/icons/scroll-down.png"
               width={40}
               height={40}
@@ -98,33 +88,32 @@ export default function Home() {
         </div>
         {/* Empreendimentos */}
         <div className="w-4/5 m-auto">
-          <h3 className="font-bold text-2xl text-center mt-10 font-roboto text-">
+          <h3 className=" text-4xl  text-center mt-10 text-">
             Confira nossas oportunidades
           </h3>
-          <Section className={"w-4/5 m-auto flex flex-wrap justify-around"}>
-            <EnterpriseProject
-              image="images/residencial-topazio/new-images/frente.jpeg"
-              title="Residencial Topázio"
-              stage="Obras Iniciadas"
-              bedrooms={2}
-              garage
-            />
-            <EnterpriseProject
-              image="images/residencial-safira/gallery/apartamento-3-4.jpg"
-              title="Residencial Safira"
-              stage="Lançamento"
-              bedrooms={2}
-              garage
-            />
+          <Section className={"w-4.5/5 m-auto flex flex-wrap justify-around"}>
+            { dataBuilding.map((b, index) => (
+              <div>
+                <EnterpriseProject
+                  key={index}
+                  image={b.image}
+                  title={b.title}
+                  stage={b.stage}
+                  bedrooms={b.bedrooms}
+                  garage={b.garage}
+                  city={b.city}
+                />
+              </div>
+            ))}
           </Section>
-          <Section className="flex flex-col justify-center items-center px-28 ">
+          <Section className="flex flex-col justify-center items-center px-28 mb-10 mt-10">
             <div>
-              <h2 className="text-3xl font-bold text-[#995522] mb-4">
+              <h2 className="text-3xl  mb-4">
                 Como realizar a inscrição no programa habitacional?
               </h2>
             </div>
-            <div className="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-1 gap-8 mt-5 mb-4">
-              <div className="w-[320px] bg-zinc-100 rounded-2xl py-8 px-4">
+            <div className="flex flex-col lg:flex-row gap-8">
+              <div className="w-[300px] bg-zinc-100 rounded-2xl py-8 px-4">
                 <div className="flex items-center justify-center flex-col">
                   <Image
                     src={DocumentacaoNecessaria}
@@ -148,7 +137,7 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
-              <div className="w-[320px] bg-zinc-100 rounded-2xl border border-[#995522] border-s-2 py-8 px-4">
+              <div className="w-[300px] bg-zinc-100 rounded-2xl  py-8 px-4">
                 <div className="flex items-center justify-center flex-col">
                   <Image
                     src={ProcessoDeInscricao}
@@ -179,7 +168,7 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
-              <div className="w-[320px] bg-zinc-100 rounded-2xl py-8 px-4">
+              <div className="w-[300px] bg-zinc-100 rounded-2xl py-8 px-4">
                 <div className="flex items-center justify-center flex-col">
                   <Image
                     src={InscricaoRealizada}
