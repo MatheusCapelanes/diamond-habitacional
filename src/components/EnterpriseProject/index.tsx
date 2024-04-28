@@ -5,7 +5,7 @@ import { IDataBuilding } from "../../../mocks/dataBuilding";
 
 const EnterpriseProject = (props: IDataBuilding) => {
   return (
-    <div className="my-10 w-fit text-white font-light">
+    <div className="my-10 w-fit text-white font-light rounded-md shadow-lg">
       <h1 className="bg-gray-300 text-slate-900 opacity-50 rounded-t-lg font-light p-2  uppercase text-center">
         {props.stage}
       </h1>
@@ -14,7 +14,7 @@ const EnterpriseProject = (props: IDataBuilding) => {
         src={props.image}
         alt="Foto ilustrativa da fachada do Topazio"
       />
-      <div className="p-3 bg-zinc-400 rounded-b-lg">
+      <div className="p-3 bg-gray-400 rounded-b-lg">
         <h2 className="text-2xl py-2">{props.title}</h2>
         <div className="flex items-center gap-2 my-2">
           <MdLocationPin size={25}/>
