@@ -8,10 +8,14 @@ import EnterpriseProject from "@/components/EnterpriseProject";
 import { TextLoop } from "easy-react-text-loop";
 import { dataBuilding } from "../../mocks/dataBuilding";
 
-
 export default function Home() {
-
-  const areText = ['Cooperativa', 'Inovação', 'Facilidade', 'Qualidade', 'Oportunidade' ]
+  const areText = [
+    "Cooperativa",
+    "Inovação",
+    "Facilidade",
+    "Qualidade",
+    "Oportunidade",
+  ];
 
   return (
     <>
@@ -45,36 +49,15 @@ export default function Home() {
             <div>
               <h1 className="text-white text-4xl lg:text-5xl font-bold mb-5 flex flex-col md:flex-row gap-2">
                 <div className="mx-2">Somos</div>
-                <span className="text-gold"><TextLoop timeout={4000} children={areText} /></span>
+                <span className="text-gold">
+                  <TextLoop timeout={4000} children={areText} />
+                </span>
               </h1>
               <p className="text-white font-montserrat">
                 Conheça agora o melhor Programa de Habitação que chegou na
                 cidade de Caieiras e região!
               </p>
             </div>
-            {/* Vídeo da Diamond */}
-            {/* <div>
-              <video
-                className="rounded-xl p-[1px] bg-[#ffd862] w-80 md:w-[420px]"
-                width="420"
-                height="300"
-                autoPlay
-                muted
-                loop
-              >
-                <source
-                  src="/videos/apresentacao-diamond-video-curta-duracao.mp4"
-                  type="video/mp4"
-                />
-                <source
-                  src="/videos/apresentacao-diamond-video-curta-duracao.webp"
-                  type="video/webm"
-                />
-                <p className="text-white">
-                  Seu navegador não suporta a reprodução de vídeos.
-                </p>
-              </video>
-            </div> */}
           </div>
           <div className="flex justify-center w-full relative">
             <Image
@@ -92,7 +75,7 @@ export default function Home() {
             Confira nossas oportunidades
           </h3>
           <Section className={"w-4.5/5 m-auto flex flex-wrap justify-around"}>
-            { dataBuilding.map((b, index) => (
+            {dataBuilding.map((b, index) => (
               <div>
                 <EnterpriseProject
                   key={index}
