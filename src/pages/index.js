@@ -76,7 +76,7 @@ export default function Home() {
           </h3>
           <Section className={"w-4.5/5 m-auto flex flex-wrap justify-around"}>
             {dataBuilding.map((b, index) => (
-              <div>
+              <div key={indexclaer}>
                 <EnterpriseProject
                   key={index}
                   image={b.image}
