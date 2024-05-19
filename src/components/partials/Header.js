@@ -125,11 +125,11 @@ export default function Header() {
                   </ul>
                 )}
               </li> */}
-              {/* <li className={`${open ? "py-2" : "py-0"} hover:text-white`}>
+              <li className={`${open ? "py-2" : "py-0"} hover:text-white`}>
                 <Link href="/noticias" className="no-underline text-white">
                   Notícias
                 </Link>
-              </li> */}
+              </li>
               {/* <li className={`${open ? "py-2" : "py-0"} hover:text-white`}>
                 <Link href="/cooperados" className="no-underline text-white">
                   Cooperados
