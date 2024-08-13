@@ -22,10 +22,10 @@
     "easy-react-text-loop": "^1.0.2",
     "eslint-config-next": "^13.5.4",
     "moment": "^2.29.4",
-    "next": "^13.5.4",
+    "next": "^14.2.3",
     "postcss": "^8.4.31",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-ga": "^3.3.1",
     "react-icons": "^4.12.0",
     "react-responsive-carousel": "^3.2.23",
@@ -34,6 +34,10 @@
     "tailwindcss": "3.3.1"
   },
   "devDependencies": {
-    "dotenv": "^16.3.1"
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
+    "dotenv": "^16.3.1",
+    "typescript": "^5.4.5"
   }
 }

@@ -8,6 +8,7 @@ export interface IDataBuilding {
     garage: boolean;
     address: string;
     city: string;
+    router: string;
 }
 
 export const dataBuilding: IDataBuilding[] = [
@@ -19,22 +20,26 @@ export const dataBuilding: IDataBuilding[] = [
         garage: true,
         address: "Rua do Topazio, 123",
         city: "Caieiras",
+        router: "/residencial-topazio",
     },
     {
         title: "Safira",
         image: "images/residencial-safira/gallery/apartamento-3-4.jpg",
         stage: "Lançamento",
         bedrooms: 2,
-        garage: false,
+        garage: true,
         address: "Rua da Esmeralda, 456",
         city: "Caieiras",
+        router: "/residencial-safira",
     },
-    // {
-    //     title: "Rubí",
-    //     image: "https://via.placeholder.com/400",
-    //     stage: "Em Construção",
-    //     bedrooms: 2,
-    //     garage: true,
-    //     address: "Rua do Rubí, 789"
-    // },
+    {
+        title: "Cristal",
+        image: "images/residencial-cristal/1.png",
+        stage: "Lançamento",
+        bedrooms: 2,
+        garage: true,
+        address: "Rua do Rubí, 789",
+        city: "Mauá",
+        router: "/residencial-cristal",
+    },
 ];

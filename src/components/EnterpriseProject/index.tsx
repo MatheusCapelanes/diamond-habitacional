@@ -2,10 +2,11 @@ import React from "react";
 import { MdOutlineBed, MdLocationPin } from "react-icons/md";
 import { FaCarSide } from "react-icons/fa6";
 import { IDataBuilding } from "../../../mocks/dataBuilding";
+import Link from "next/link";
 
 const EnterpriseProject = (props: IDataBuilding) => {
   return (
-    <div className="my-10 w-fit text-white font-light rounded-md shadow-lg">
+    <Link href={props.router} className="my-10 w-fit text-white font-light rounded-md shadow-lg">
       <h1 className="bg-gray-300 text-slate-900 opacity-50 rounded-t-lg font-light p-2  uppercase text-center">
         {props.stage}
       </h1>
@@ -36,7 +37,7 @@ const EnterpriseProject = (props: IDataBuilding) => {
       {/* <button className="bg-gold text-black w-full rounded-lg mt-2 p-2 uppercase font-semibold tracking-wide hover:scale-y-110">
         Saiba Mais
       </button> */}
-    </div>
+    </Link>
   );
 };
 
