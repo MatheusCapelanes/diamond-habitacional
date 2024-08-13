@@ -4,10 +4,11 @@ import { SlLocationPin } from 'react-icons/sl';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { RiWhatsappLine } from "react-icons/ri";
+import useWindowDimensions from 'utils/useWindows';
 
 
 const CristalPage = () => {
-    const width = window !== undefined ? window.innerWidth : null
+    const { width } = useWindowDimensions();
 
     return (
         <div className=''>

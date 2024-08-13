@@ -4,11 +4,11 @@ import { SlLocationPin } from 'react-icons/sl';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { RiWhatsappLine } from "react-icons/ri";
+import useWindowDimensions from 'utils/useWindows';
 
 
 const TopazioPage = () => {
-    const width = window !== undefined ? window.innerWidth : null
-
+    const { width } = useWindowDimensions();
     return (
         <div className=''>
 
@@ -99,3 +99,7 @@ const TopazioPage = () => {
 }
 
 export default TopazioPage
+
+function useState(arg0: { width: number; height: number; }): [any, any] {
+    throw new Error('Function not implemented.');
+}
