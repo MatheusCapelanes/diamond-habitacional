@@ -37,7 +37,7 @@ export default function Home() {
                   <TextLoop timeout={4000} children={areText} />
                 </span>
               </h1>
-              <p className="text-white font-montserrat">
+              <p className="text-white font-montserrat mt-12">
                 Conheça agora o melhor Programa de Habitação que chegou na
                 cidade de Caieiras e região!
               </p>
@@ -58,7 +58,7 @@ export default function Home() {
           <h3 className=" text-4xl  text-center my-10 text-">
             Confira nossas oportunidades
           </h3>
-          <section className={"w-4/5 m-auto grid gap-4 grid-cols-2"}>
+          <section className={"w-4/5 m-auto grid gap-4 grid-cols-1 lg:grid-cols-2"}>
             {dataBuilding.map((b, index) => (
               <div className="m-auto" key={index}>
                 <EnterpriseProject
