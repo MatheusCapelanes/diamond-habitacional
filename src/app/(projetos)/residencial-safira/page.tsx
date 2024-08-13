@@ -7,7 +7,7 @@ import { RiWhatsappLine } from "react-icons/ri";
 
 
 const SafiraPage = () => {
-    const width = window.innerWidth
+    const width = window !== undefined ? window.innerWidth : null
     return (
         <div className=''>
 

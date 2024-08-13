@@ -7,8 +7,8 @@ import { RiWhatsappLine } from "react-icons/ri";
 
 
 const CristalPage = () => {
-    const width = window.innerWidth
-    console.log(width)
+    const width = window !== undefined ? window.innerWidth : null
+
     return (
         <div className=''>
 
