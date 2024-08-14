@@ -26,7 +26,7 @@ export const dataBuilding: IDataBuilding[] = [
         title: "Safira",
         image: "images/residencial-safira/gallery/apartamento-3-4.jpg",
         stage: "Lançamento",
-        bedrooms: 2,
+        bedrooms: 3,
         garage: true,
         address: "Rua da Esmeralda, 456",
         city: "Caieiras",
