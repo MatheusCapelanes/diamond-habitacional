@@ -4,7 +4,7 @@ export interface IDataBuilding {
     title: string;
     image: string;
     stage: string;
-    bedrooms: number;
+    bedrooms: string;
     garage: boolean;
     address: string;
     city: string;
@@ -14,9 +14,9 @@ export interface IDataBuilding {
 export const dataBuilding: IDataBuilding[] = [
     {
         title: "Topazio",
-        image: "images/residencial-topazio/new-images/frente.jpeg",
+        image: "images/residencial-topazio/8.png",
         stage: "Em Construção",
-        bedrooms: 2,
+        bedrooms: '2 Suites',
         garage: true,
         address: "Rua do Topazio, 123",
         city: "Caieiras",
@@ -26,7 +26,7 @@ export const dataBuilding: IDataBuilding[] = [
         title: "Safira",
         image: "images/residencial-safira/gallery/apartamento-3-4.jpg",
         stage: "Lançamento",
-        bedrooms: 3,
+        bedrooms: '3 Dormitórios',
         garage: true,
         address: "Rua da Esmeralda, 456",
         city: "Caieiras",
@@ -36,7 +36,7 @@ export const dataBuilding: IDataBuilding[] = [
         title: "Cristal",
         image: "images/residencial-cristal/1.png",
         stage: "Lançamento",
-        bedrooms: 2,
+        bedrooms: '2 Dormitórios',
         garage: true,
         address: "Rua do Rubí, 789",
         city: "Mauá",

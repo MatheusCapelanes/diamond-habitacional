@@ -22,44 +22,51 @@ const TopazioPage = () => {
                     swipeable
                 >
                     <div>
-                        <img className='p-2' src="/images/residencial-topazio/new-images/1.jpg" alt="Torre Cristal" />
+                        <img className='p-2' src="/images/residencial-topazio/1.png" alt="Torre Cristal" />
                     </div>
                     <div>
-                        <img className='p-2' src="/images/residencial-topazio/new-images/2.jpg" alt="Torre Cristal" />
+                        <img className='p-2' src="/images/residencial-topazio/2.png" alt="Torre Cristal" />
                     </div>
                     <div>
-                        <img className='p-2' src="/images/residencial-topazio/new-images/3.jpg" alt="Torre Cristal" />
+                        <img className='p-2' src="/images/residencial-topazio/3.png" alt="Torre Cristal" />
                     </div>
                     <div>
-                        <img className='p-2' src="/images/residencial-topazio/new-images/4.jpg" alt="Torre Cristal" />
+                        <img className='p-2' src="/images/residencial-topazio/4.png" alt="Torre Cristal" />
                     </div>
                     <div>
-                        <img className='p-2' src="/images/residencial-topazio/new-images/5.jpg" alt="Torre Cristal" />
+                        <img className='p-2' src="/images/residencial-topazio/5.png" alt="Torre Cristal" />
                     </div>
                     <div>
-                        <img className='p-2' src="/images/residencial-topazio/new-images/6.jpg" alt="Torre Cristal" />
+                        <img className='p-2' src="/images/residencial-topazio/6.png" alt="Torre Cristal" />
                     </div>
                     <div>
-                        <img className='p-2' src="/images/residencial-topazio/new-images/7.jpg" alt="Torre Cristal" />
+                        <img className='p-2' src="/images/residencial-topazio/7.png" alt="Torre Cristal" />
                     </div>
                     <div>
-                        <img className='p-2' src="/images/residencial-topazio/new-images/8.jpg" alt="Torre Cristal" />
+                        <img className='p-2' src="/images/residencial-topazio/8.png" alt="Torre Cristal" />
                     </div>
                     <div>
-                        <img className='p-2' src="/images/residencial-topazio/new-images/9.jpg" alt="Torre Cristal" />
+                        <img className='p-2' src="/images/residencial-topazio/9.png" alt="Torre Cristal" />
                     </div>
                     <div>
-                        <img className='p-2' src="/images/residencial-topazio/new-images/10.jpg" alt="Torre Cristal" />
+                        <img className='p-2' src="/images/residencial-topazio/10.png" alt="Torre Cristal" />
                     </div>
                     <div>
-                        <img className='p-2' src="/images/residencial-topazio/new-images/11.jpg" alt="Torre Cristal" />
+                        <img className='p-2' src="/images/residencial-topazio/11.png" alt="Torre Cristal" />
                     </div>
                     <div>
-                        <img className='p-2' src="/images/residencial-topazio/new-images/12.jpg" alt="Torre Cristal" />
+                        <img className='p-2' src="/images/residencial-topazio/12.png" alt="Torre Cristal" />
                     </div>
                     <div>
-                        <img className='p-2' src="/images/residencial-topazio/new-images/13.jpg" alt="Torre Cristal" />
+                        <img className='p-2' src="/images/residencial-topazio/13.png" alt="Torre Cristal" />
                     </div>
+                    <div>
+                        <img className='p-2' src="/images/residencial-topazio/14.png" alt="Torre Cristal" />
+                    </div>
+                    <div>
+                        <img className='p-2' src="/images/residencial-topazio/15.png" alt="Torre Cristal" />
+                    </div>
+
                 </Carousel>
             </div>
             <div className=''>

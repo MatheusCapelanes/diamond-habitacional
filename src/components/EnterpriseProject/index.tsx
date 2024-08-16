@@ -21,10 +21,10 @@ const EnterpriseProject = (props: IDataBuilding) => {
           <MdLocationPin size={25}/>
           <p className="">{props.city}</p>
         </div>
-        {props.bedrooms && props.bedrooms > 0 ? (
+        {props.bedrooms && props.bedrooms.length > 0 ? (
           <div className="flex items-center gap-2">
             <MdOutlineBed size={25} />
-            <p>{`${props.bedrooms} Dormitorios`}</p>
+            <p>{`${props.bedrooms}`}</p>
           </div>
         ) : null}
         {props.garage && (
