@@ -106,7 +106,3 @@ const TopazioPage = () => {
 }
 
 export default TopazioPage
-
-function useState(arg0: { width: number; height: number; }): [any, any] {
-    throw new Error('Function not implemented.');
-}
