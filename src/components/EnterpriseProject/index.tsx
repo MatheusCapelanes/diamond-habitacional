@@ -6,37 +6,44 @@ import Link from "next/link";
 
 const EnterpriseProject = (props: IDataBuilding) => {
   return (
-    <Link href={props.router} className="my-10 w-fit text-white font-light rounded-md shadow-lg">
-      <h1 className="bg-gray-300 text-slate-900 opacity-50 rounded-t-lg font-light p-2  uppercase text-center">
+    <Link
+      href={props.router}
+      className="group block my-10 w-full max-w-2xl bg-white text-slate-900 font-light rounded-2xl shadow-2xl transition-transform hover:-translate-y-2 hover:shadow-3xl"
+    >
+      <h1 className="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white rounded-t-2xl font-semibold p-4 text-lg uppercase text-center tracking-wider">
         {props.stage}
       </h1>
-      <img
-        className="w-[400px] h-[400px] object-cover shadow-lg"
-        src={props.image}
-        alt="Foto ilustrativa da fachada do Topazio"
-      />
-      <div className="p-3 bg-gray-400 rounded-b-lg">
-        <h2 className="text-2xl py-2">{props.title}</h2>
-        <div className="flex items-center gap-2 my-2">
-          <MdLocationPin size={25}/>
-          <p className="">{props.city}</p>
-        </div>
-        {props.bedrooms && props.bedrooms.length > 0 ? (
-          <div className="flex items-center gap-2">
-            <MdOutlineBed size={25} />
-            <p>{`${props.bedrooms}`}</p>
-          </div>
-        ) : null}
-        {props.garage && (
-          <div className="flex items-center gap-2 mt-2">
-            <FaCarSide size={25} />
-            <p>Com Garagem</p>
-          </div>
-        )}
+      <div className="overflow-hidden rounded-b-2xl">
+        <img
+          className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-105"
+          src={props.image}
+          alt={`Foto ilustrativa da fachada do ${props.title}`}
+        />
       </div>
-      {/* <button className="bg-gold text-black w-full rounded-lg mt-2 p-2 uppercase font-semibold tracking-wide hover:scale-y-110">
-        Saiba Mais
-      </button> */}
+      <div className="p-8 bg-gray-50 rounded-b-2xl">
+        <h2 className="text-2xl font-bold mb-4">{props.title}</h2>
+        <div className="flex items-center gap-2 text-gray-600 mb-4">
+          <MdLocationPin size={26} />
+          <span className="text-lg">{props.city}</span>
+        </div>
+        <div className="flex flex-col gap-6 mb-6">
+          {props.bedrooms && props.bedrooms.length > 0 && (
+            <div className="flex items-center gap-2 text-gray-700 text-lg">
+              <MdOutlineBed size={24} />
+              <span>{props.bedrooms}</span>
+            </div>
+          )}
+          {props.garage && (
+            <div className="flex items-center gap-2 text-gray-700 text-lg">
+              <FaCarSide size={24} />
+              <span>Com Garagem</span>
+            </div>
+          )}
+        </div>
+        <button className="bg-yellow-500 text-white w-full rounded-lg py-3 mt-2 uppercase text-lg font-semibold tracking-wide transition hover:bg-yellow-600 hover:scale-105">
+          Saiba Mais
+        </button>
+      </div>
     </Link>
   );
 };
